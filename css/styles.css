@@ -11096,28 +11096,4 @@ section.resume-section .resume-section-content {
     display: none !important;
   }
 }
-/* --- Mobile: make the contact line wrap cleanly --- */
-@media (max-width: 991.98px) {
-  /* Let the whole subheading wrap naturally */
-  .resume-section-content .subheading {
-    white-space: normal !important;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    line-height: 1.35;
-  }
 
-  /* Make links behave nicely on small screens */
-  .resume-section-content .subheading a {
-    display: inline-block;
-    max-width: 100%;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
-  }
-
-  /* Optional: slightly smaller so it fits better */
-  .resume-section-content .subheading {
-    font-size: 1rem; /* adjust if you want */
-  }
-}
