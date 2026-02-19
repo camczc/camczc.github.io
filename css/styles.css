@@ -11097,3 +11097,26 @@ section.resume-section .resume-section-content {
   }
 }
 
+/* --- Contact stack styling --- */
+
+/* Desktop: keep inline style */
+.contact-stack span {
+  display: inline;
+  margin-right: 0.6rem;
+}
+
+/* Mobile: stack nicely */
+@media (max-width: 991.98px) {
+  .contact-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .contact-stack span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+  }
+}
