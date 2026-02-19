@@ -10921,6 +10921,32 @@ p.lead {
     display: block;
   }
 }
+/* --- Mobile navbar improvements (show headshot + better spacing) --- */
+@media (max-width: 991.98px) {
+  /* Give the fixed-top bar a bit more height since we now show a photo */
+  body {
+    padding-top: 4.25rem; /* was 3.375rem */
+  }
+
+  #sideNav .navbar-brand {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+
+  /* Mobile headshot in the top bar */
+  #sideNav .nav-profile-mobile {
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+  }
+
+  /* Mobile name styling */
+  #sideNav .nav-name-mobile {
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+  }
+}
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
@@ -11025,5 +11051,25 @@ section.resume-section .resume-section-content {
   }
   .subheading {
     font-size: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  section.resume-section {
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+  }
+
+  h1, .h1 {
+    font-size: 3rem;
+  }
+
+  .subheading {
+    font-size: 1.15rem;
+  }
+
+  .social-icons .social-icon {
+    height: 3.15rem;
+    width: 3.15rem;
+    margin-right: 1rem;
   }
 }
