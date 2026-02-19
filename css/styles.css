@@ -11096,27 +11096,12 @@ section.resume-section .resume-section-content {
     display: none !important;
   }
 }
-
-/* --- Contact stack styling --- */
-
-/* Desktop: keep inline style */
-.contact-stack span {
-  display: inline;
-  margin-right: 0.6rem;
-}
-
-/* Mobile: stack nicely */
+/* --- Mobile: keep contact line on ONE line --- */
 @media (max-width: 991.98px) {
-  .contact-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 0.45rem;
-  }
-
-  .contact-stack span {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 1rem;
+  .resume-section-content .subheading {
+    white-space: nowrap;     /* prevent line breaks */
+    overflow: hidden;        /* hide overflow */
+    text-overflow: ellipsis; /* show ... if needed */
+    font-size: 0.9rem;       /* shrink text to fit */
   }
 }
