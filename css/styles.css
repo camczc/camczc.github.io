@@ -10970,3 +10970,60 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+/* ---------- Mobile fixes (better spacing + no awkward vertical centering) ---------- */
+@media (max-width: 991.98px) {
+  /* Give the fixed top navbar more breathing room on small screens */
+  body {
+    padding-top: 4.75rem; /* was 3.375rem */
+  }
+
+  /* Stop vertically-centering entire sections on mobile */
+  section.resume-section {
+    display: block;          /* overrides display:flex */
+    min-height: auto;        /* overrides the tall-screen behavior */
+    padding-top: 4rem;       /* slightly tighter than 5rem */
+    padding-bottom: 3.5rem;
+  }
+
+  /* Make headings fit nicely */
+  h1, .h1 {
+    font-size: 3rem;
+    line-height: 1.05;
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+  }
+
+  /* Social icons should wrap instead of running off-screen */
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .social-icons .social-icon {
+    margin-right: 0;         /* gap handles spacing now */
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+
+  /* Tighter nav padding on mobile */
+  #sideNav {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 575.98px) {
+  h1, .h1 {
+    font-size: 2.4rem;
+  }
+  p.lead {
+    font-size: 1.05rem;
+  }
+  .subheading {
+    font-size: 1rem;
+  }
+}
