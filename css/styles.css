@@ -11103,28 +11103,24 @@ section.resume-section .resume-section-content {
   display: inline;
   margin-right: 0.6rem;
 }
-
-/* Mobile: stack nicely */
+/* Mobile: keep contact line on ONE line and shrink to fit */
 @media (max-width: 991.98px) {
   .contact-stack {
     display: flex;
-    flex-direction: column;
-    gap: 0.45rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+
+    /* the "shrink to fit" part */
+    font-size: clamp(0.72rem, 2.6vw, 1rem);
+    line-height: 1.2;
+    white-space: nowrap;
   }
 
-  .contact-stack span {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 1rem;
-  }
-}
-/* --- Mobile: keep contact line on ONE line --- */
-@media (max-width: 991.98px) {
-  .resume-section-content .subheading {
-    white-space: nowrap;     /* prevent line breaks */
-    overflow: hidden;        /* hide overflow */
-    text-overflow: ellipsis; /* show ... if needed */
-    font-size: 0.9rem;       /* shrink text to fit */
+  .contact-stack span,
+  .contact-stack a {
+    display: inline-flex;
+    white-space: nowrap;
   }
 }
