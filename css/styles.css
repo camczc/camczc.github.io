@@ -11096,13 +11096,6 @@ section.resume-section .resume-section-content {
     display: none !important;
   }
 }
-/* --- Contact stack styling --- */
-
-/* Desktop: keep inline style */
-.contact-stack span {
-  display: inline;
-  margin-right: 0.6rem;
-}
 /* Mobile: keep contact line on ONE line and shrink to fit */
 @media (max-width: 991.98px) {
   .contact-stack {
