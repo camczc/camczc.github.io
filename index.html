@@ -20,10 +20,23 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Cameron Cooper</span>
+        <!-- Mobile brand (shows headshot + name) -->
+        <span class="d-flex d-lg-none align-items-center gap-2">
+          <img
+            class="img-fluid rounded-circle nav-profile-mobile"
+            src="assets/img/profile_cam.jpg"
+            alt="Cameron Cooper headshot"
+          />
+          <span class="nav-name-mobile">Cameron Cooper</span>
+        </span>
+      
+        <!-- Desktop brand (shows big headshot) -->
         <span class="d-none d-lg-block">
-          <!-- Replace this file in assets/img/ to update your headshot -->
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile_cam.jpg" alt="Cameron Cooper headshot" />
+          <img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="assets/img/profile_cam.jpg"
+            alt="Cameron Cooper headshot"
+          />
         </span>
       </a>
       <button
