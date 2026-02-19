@@ -11073,3 +11073,26 @@ section.resume-section .resume-section-content {
     margin-right: 1rem;
   }
 }
+/* --- Mobile navbar headshot hard-fix --- */
+@media (max-width: 991.98px) {
+  #sideNav .nav-profile-mobile {
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  /* extra safety: never let any navbar brand image get huge on mobile */
+  #sideNav .navbar-brand img {
+    max-height: 40px !important;
+    height: auto !important;
+    width: auto !important;
+  }
+
+  /* ensure the big desktop profile image never appears on mobile */
+  #sideNav .img-profile {
+    display: none !important;
+  }
+}
