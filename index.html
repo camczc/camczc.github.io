@@ -76,17 +76,7 @@
             <span>📍 New York, NY</span>
             <span>📞 (917) 912-1264</span>
             <span>
-              ✉️ <a href="/cdn-cgi/l/email-protection#ed8e978ead9880848e85c3888998"><span class="__cf_email__" data-cfemail="85e6ffe6c5f0e8ece6edabe0e1f0">[email&#160;protected]</span></a>
-            </span>
-            <span>
-              🔗 <a href="https://www.linkedin.com/in/czcoop/" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/czcoop
-              </a>
-            </span>
-            <span>
-              🌐 <a href="https://www.camcooper.com" target="_blank" rel="noopener noreferrer">
-                camcooper.com
-              </a>
+              ✉️ <a href="/cdn-cgi/l/email-protection#ed8e978ead9880848e85c3888998"><span class="__cf_email__" data-cfemail="85e6ffe6c5f0e8ece6edabe0e1f0">czc@umich.edu</span></a>
             </span>
           </div>
 
@@ -169,7 +159,7 @@
           <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
             <div class="flex-grow-1">
               <h3 class="mb-0">University of Michigan</h3>
-              <div class="subheading mb-3">Bachelor of Science in Data Science · Minor in Computer Science</div>
+              <div class="subheading nowrap mb-3">Bachelor of Science in Data Science · Minor in Computer Science</div>
               <p class="mb-2">GPA: 3.7</p>
               <p class="mb-0">
                 <strong>Relevant Coursework:</strong> Elementary Programming Concepts, Programming and Intro Data Structures, Discrete Math, Data Structures and Algorithms, Intro to Artificial Intelligence, Intro Data Science, Principle Econ I, Robotics Mechanisms, AI Based Market Disruption, Calculus I, Data-Oriented Programming, AI Ethics, Data Manipulation, Building Data Driven Apps, Entrepreneurial Marketing, Models of Social Information
@@ -182,7 +172,7 @@
           <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="flex-grow-1">
               <h3 class="mb-0">Harvard Data Science Initiative</h3>
-              <div class="subheading mb-3">Certificate of Completion · Agentic AI: Contextualized and Applied</div>
+              <div class="subheading nowrap mb-3">Certificate of Completion · Agentic AI: Contextualized and Applied</div>
             </div>
             <div class="flex-shrink-0"><span class="text-primary">Expected March 2026</span></div>
           </div>
@@ -204,6 +194,7 @@
             .skill-list { font-size: 0.78rem; color: #555; line-height: 1.6; padding-left: 24px; margin-bottom: 2px; }
             a.project-link { color: #f4b942; text-decoration: underline; transition: color 0.2s; }
             a.project-link:hover { color: #3d6cb5; }
+            .subheading.nowrap { white-space: nowrap; display: block; max-width: 100%; font-size: clamp(0.45rem, 1.5vw, 0.875rem); letter-spacing: 0.05em; }
           </style>
 
           <div class="skill-category">
@@ -273,7 +264,7 @@
           <!-- TwentyTwenty -->
           <div class="mb-5">
             <h3 class="mb-0"><a class="project-link" href="https://camcooper.com/twentytwenty/" target="_blank" rel="noopener noreferrer">TwentyTwenty</a> — AI-Powered Stock &amp; Crypto Research Platforms</h3>
-            <div class="subheading mb-2">FastAPI · PostgreSQL · Claude API · Streamlit · pandas · yfinance · CoinGecko</div>
+            <div class="subheading nowrap mb-2">FastAPI · PostgreSQL · Claude API · Streamlit · pandas · yfinance · CoinGecko</div>
             <p>
               Built two full-stack quantitative research platforms computing RSI, MACD, Bollinger Bands, and composite signal scores across FastAPI / PostgreSQL backends, with backtesting engines supporting multiple strategies and full metrics (Sharpe, Sortino, max drawdown) and AI-generated analyst briefs.
             </p>
@@ -282,7 +273,7 @@
           <!-- ScoutingReport -->
           <div class="mb-4">
             <h3 class="mb-0"><a class="project-link" href="https://github.com/camczc/scoutingreport" target="_blank" rel="noopener noreferrer">ScoutingReport</a> — AI-Powered MLB Scouting Platform</h3>
-            <div class="subheading mb-2">FastAPI · Supabase · Claude API · Streamlit · Plotly · MLB Stats API</div>
+            <div class="subheading nowrap mb-2">FastAPI · Supabase · Claude API · Streamlit · Plotly · MLB Stats API</div>
             <p>
               Built a full-stack MLB analytics platform combining live player data with AI-generated scouting reports and game previews. Features a pitch location heatmap visualizer with handedness and pitch-type filters, a head-to-head matchup analyzer, career stat trends, and a today's games dashboard with probable pitcher breakdowns and AI game previews — all backed by a FastAPI + Supabase data layer.
             </p>
@@ -291,7 +282,7 @@
           <!-- Zookeeper -->
           <div class="mb-4">
             <h3 class="mb-0">Zookeeper — Graph Algorithms &amp; Travelling Salesman</h3>
-            <div class="subheading mb-2">C++ · Graph Theory · MST · TSP · Branch &amp; Bound</div>
+            <div class="subheading nowrap mb-2">C++ · Graph Theory · MST · TSP · Branch &amp; Bound</div>
             <p>
               Implemented three modes of a graph optimization engine in C++. Built Prim's algorithm to compute a Minimum Spanning Tree across a constrained map with zone-based connectivity rules. Designed and implemented a fast TSP heuristic (nearest-neighbor insertion) to approximate optimal tours across tens of thousands of nodes in O(n²) time. Implemented an exact branch-and-bound TSP solver with MST-based lower bound pruning to guarantee optimal solutions within strict time limits.
             </p>
@@ -300,7 +291,7 @@
           <!-- Elevator Escape -->
           <div class="mb-4">
             <h3 class="mb-0">Elevator Escape — C++ Elevator Simulation &amp; AI</h3>
-            <div class="subheading mb-2">C++ · OOP · Greedy AI · Terminal Simulation</div>
+            <div class="subheading nowrap mb-2">C++ · OOP · Greedy AI · Terminal Simulation</div>
             <p>
               Built a 10-floor hotel elevator simulation in C++ with human and AI play modes. The AI uses an anger-weighted greedy dispatch algorithm — scoring every floor by cumulative passenger frustration, routing the closest idle elevator, and optimizing each pickup by loading whichever direction group (up vs. down) carries the higher combined anger to maximize satisfaction per trip. Engineered the full simulation engine: per-tick elevator movement, anger escalation, passenger explosions, a move-command parser, and save/load support.
             </p>
@@ -309,7 +300,7 @@
           <!-- LightBox Rent-Roll AI System -->
           <div class="mb-4">
             <h3 class="mb-0">LightBox Rent-Roll AI System</h3>
-            <div class="subheading mb-2">End-to-end ML pipeline · Python · GPT-based graders · HUD-FMR benchmarking</div>
+            <div class="subheading nowrap mb-2">End-to-end ML pipeline · Python · GPT-based graders · HUD-FMR benchmarking</div>
             <p>
               Built an end-to-end pipeline to extract, standardize, and validate rent-roll data using Python, GPT-based graders, and automated HUD-FMR benchmarking,
               reducing QA time by ~80% and powering interactive analytics dashboards.
